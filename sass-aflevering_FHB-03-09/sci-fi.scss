@@ -1,0 +1,112 @@
+$pad-marg: 20px;
+$text: helvetica;
+$for-head: "Bookman";
+$titles: "Franklin Gothic Medium";
+$mysize: 100px;
+
+
+@mixin img-size {
+    max-width: 750px;
+    max-height: auto;
+}
+
+@mixin top-bot {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: $mysize;
+    border-radius: 10px;
+}
+
+body {
+    max-width: 1250px;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: $pad-marg;
+}
+
+.header {
+    @include top-bot();
+    background-image: linear-gradient(salmon, white);
+}
+
+// elsker bare laksefarve, det ser bare så godt ud
+
+.footer {
+    @include top-bot()
+}
+
+ul {
+    list-style-type: none;
+    li {
+        display: inline;
+        a {
+            text-decoration: none;
+            margin-right: $pad-marg;
+            color: inherit;
+            font-family: $for-head;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover {
+                color: khaki;
+            }
+        }
+    }
+}
+
+.title {
+    font-family: $for-head;
+    font-size: 50px;
+}
+
+.sub-title, .tiny-title {
+    font-family: $titles;
+}
+
+p, figcaption {
+    font-family: $text;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+}
+
+.tiny-title {
+    font-size: 17px;
+}
+
+img {
+    @include img-size()
+}
+
+.img-container { 
+    max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(salmon, white);
+    border-radius: 10px;
+    padding-top: $pad-marg;
+}
+
+figcaption {
+    padding: $pad-marg;
+}
+
+.copyright {
+    font-family: $for-head;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+// skulle også lige prøve en farve funktion ;)
+
+span:hover {
+    color: mix(salmon, white);
+}

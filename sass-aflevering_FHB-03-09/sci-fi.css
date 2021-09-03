@@ -1,0 +1,81 @@
+body {
+  max-width: 1250px;
+  margin: 0; }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px; }
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  border-radius: 10px;
+  background-image: linear-gradient(salmon, white); }
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  border-radius: 10px; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    display: inline; }
+    ul li a {
+      text-decoration: none;
+      margin-right: 20px;
+      color: inherit;
+      font-family: "Bookman";
+      font-size: 18px;
+      font-weight: bold; }
+      ul li a:hover {
+        color: khaki; }
+
+.title {
+  font-family: "Bookman";
+  font-size: 50px; }
+
+.sub-title, .tiny-title {
+  font-family: "Franklin Gothic Medium"; }
+
+p, figcaption {
+  font-family: helvetica; }
+
+.sub-title {
+  display: flex;
+  justify-content: center; }
+
+.tiny-title {
+  font-size: 17px; }
+
+img {
+  max-width: 750px;
+  max-height: auto; }
+
+.img-container {
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(salmon, white);
+  border-radius: 10px;
+  padding-top: 20px; }
+
+figcaption {
+  padding: 20px; }
+
+.copyright {
+  font-family: "Bookman";
+  font-size: 21px;
+  font-weight: bold; }
+
+span:hover {
+  color: #fdc0b9; }
+
+/*# sourceMappingURL=sci-fi.css.map */
